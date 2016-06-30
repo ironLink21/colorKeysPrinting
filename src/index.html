@@ -10,11 +10,16 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="vendor/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
   <app-root>Loading...</app-root>
 
-  
+
 
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
@@ -24,8 +29,10 @@
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="vendor/parallax.js/src/parallax.js"></script>
 
-  
 
 </body>
 </html>

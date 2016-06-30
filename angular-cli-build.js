@@ -15,7 +15,11 @@ module.exports = function(defaults) {
       'es6-shim/es6-shim.js',
       'reflect-metadata/**/*.+(ts|js|js.map)',
       'rxjs/**/*.+(js|js.map)',
-      '@angular/**/*.+(js|js.map)'
+      '@angular/**/*.+(js|js.map)',
+      'underscore/underscore-min.js',
+      'jquery/dist/jquery.min.js',
+      'materialize-css/dist/**/*.+(min.js|min.css|woff2|woff|ttf)',
+      'parallax.js/src/*.js'
     ]
   });
 };

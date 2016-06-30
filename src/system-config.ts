@@ -7,10 +7,26 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'underscore': 'vendor/underscore/underscore-min.js',
+  'jquery': 'vendor/jquery/dist/jquery.min.js',
+  'materialize-css': 'vendor/materialize-css/dist/js/materialize.min.js',
+  'parallax.js': 'vendor/parallax.js/src/parallax.js',
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'underscore':{
+    format: 'cjs'
+  },
+  'jquery':{
+    format: 'cjs'
+  },
+  'materialize-css':{
+    format: 'cjs'
+  },
+  'parallax.js':{
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,6 +49,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/mailer',
   /** @cli-barrel */
 ];
 
